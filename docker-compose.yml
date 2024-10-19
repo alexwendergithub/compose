@@ -10,7 +10,7 @@ networks:
 services:
   mysql:
     container_name: horus_mysql
-    image: luymar99/horus_mysql
+    image: luymar99/horus_mysql:1.0
     networks:
       network-default:
        ipv4_address: 10.255.255.2
@@ -27,7 +27,7 @@ services:
 
   zabbix-server:
     container_name: horus_zabbix-server
-    image: luymar99/horus_zabbix-server
+    image: luymar99/horus_zabbix-server:1.0
     networks:
       network-default:
        ipv4_address: 10.255.255.3
@@ -47,7 +47,7 @@ services:
 
   zabbix-frontend:
     container_name: horus_zabbix-frontend
-    image: luymar99/horus_zabbix-web
+    image: luymar99/horus_zabbix-web:1.0
     networks:
       network-default:
        ipv4_address: 10.255.255.4
@@ -66,7 +66,7 @@ services:
 
   grafana:
     container_name: horus_grafana
-    image: luymar99/horus_grafana
+    image: luymar99/horus_grafana:1.0
     networks:
       network-default:
        ipv4_address: 10.255.255.5
